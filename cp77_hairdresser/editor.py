@@ -10,7 +10,7 @@ from json2obj import Json2Obj
 
 class Core:
     def __init__(self):
-        with open('hairstyles.json') as f:
+        with open(os.path.join(os.path.dirname(__file__), 'hairstyles.json')) as f:
             self.styles = Json2Obj(json.load(f)).styles
             for style in self.styles:
                 style.code = hexlify(unhexlify(style.code))
@@ -52,20 +52,19 @@ class Core:
         )
 
     def current_hairstyle(self):
-        for idx, style in zip(range(len(self.styles)), self.styles):
+        for style in self.styles:
             match = self.hexdata.find(style.code)
             if match >= 0:
                 self._hairstyle_idx = match
-                return self.get_hairstyle(idx)
+                return style
         if match < 0:
             return None
 
     def apply(self, new_style):
-        #new_style = self.get_hairstyle(style_id)
         self.hexdata = self.hexdata[:self.data_idx] + new_style.code + self.hexdata[self.data_idx+16::]
 
-    def get_hairstyle(self, idx):
-        return [style for style in self.styles if style.idx == idx][0]
+    def get_hairstyle(self, id):
+        return [style for style in self.styles if style.id == id][0]
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
