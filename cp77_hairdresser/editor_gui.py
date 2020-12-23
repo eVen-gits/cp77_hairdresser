@@ -5,7 +5,7 @@ from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
 #from ui import resource
-from editor import Core
+from .editor import Core
 
 class HaircutDialog(QDialog):
     def __init__(self,):

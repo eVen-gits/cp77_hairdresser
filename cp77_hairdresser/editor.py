@@ -6,7 +6,7 @@ from shutil import copyfile
 import random
 import json
 
-from json2obj import Json2Obj
+from .json2obj import Json2Obj
 
 class Core:
     def __init__(self):
