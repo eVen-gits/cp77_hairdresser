@@ -1,16 +1,9 @@
 # cp77_hairdresser
 
-A python lib for changing hairstyle in Cyberpunk 2077.
+A cross-platform program for changing hairstyle in Cyberpunk 2077.
+Implements UI and script style editor.
 
-# Creating a package for PIP
-
-First, edit the version in `setup.py`.
-
-```
-python3 setup.py sdist bdist_wheel
-python3 -m twine upload --repository testpypi dist/* #for test pypi
-python3 -m twine upload --repository pypi dist/* #for pypi
-```
+Inspired by: https://www.nexusmods.com/cyberpunk2077/mods/291
 
 # Installation (for users)
 
@@ -25,12 +18,22 @@ pip install cp77_hairdresser
 
 To run GUI, execute
 ```
-python3 -m cp77_hairdresser.editor_gui
+python -m cp77_hairdresser.editor_gui
 ```
 
 There is also script version of the program. To run it, execute
 ```
-python3 -m cp77_hairdresser.editor
+python -m cp77_hairdresser.editor
 ```
 
 Use `-h` flag to display help information on how to use the script version.
+
+# Creating a package for PIP (my own reminder)
+
+First, edit the version in `setup.py`.
+
+```
+python3 setup.py sdist bdist_wheel
+python3 -m twine upload --repository testpypi dist/* #for test pypi
+python3 -m twine upload --repository pypi dist/* #for pypi
+```
