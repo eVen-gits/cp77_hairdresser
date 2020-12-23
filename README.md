@@ -1,5 +1,7 @@
 # cp77_hairdresser
 
+![image](https://i.imgur.com/UapYJbV.png)
+
 A cross-platform program for changing hairstyle in Cyberpunk 2077.
 Implements UI and script style editor.
 
