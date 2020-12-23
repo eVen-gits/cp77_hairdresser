@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="even-gits",
-    version="0.1.0",
+    name="cp77_hairdresser",
+    version="0.1.1",
     author="Egej Vencelj",
     author_email="egej.vencelj@gmail.com",
     description="Cyberpunk 2077 hairstyle changer",

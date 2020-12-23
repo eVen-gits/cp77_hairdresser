@@ -18,7 +18,7 @@ python3 -m twine upload --repository pypi dist/* #for pypi
 
 ```
 pip install pyqt5
-pip install
+pip install cp77_hairdresser
 ```
 
 # Running the program
