@@ -1,3 +1,7 @@
+# Update:
+
+The tool has been superseeded by a fully fledged appearance editor and as such, this one is obsolete. The repository will remain available for anyone that wants to build their own tool on it. Thanks to everyone who used the tool.
+
 # cp77_hairdresser
 
 ![image](https://i.imgur.com/UapYJbV.png)
